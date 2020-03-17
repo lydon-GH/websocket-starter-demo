@@ -1,0 +1,17 @@
+server:
+    port: 8081
+    tomcat:
+      max-threads: 1000
+      accept-count: 1000
+      max-connections: 2000
+    error:
+      include-stacktrace: never
+spring:
+    websocket:
+      endpoint: /chat
+      subscribe-prefixs: /message/,/notice/
+      destination-prefixes: /app
+
+
+
+
